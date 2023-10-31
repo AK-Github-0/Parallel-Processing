@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <omp.h>
 
-void Hello(void); // Thread function
+void Hello(void);
 
 int main(int argc, char *argv[]) {
     int thread_count = strtol(argv[1], NULL, 10);
