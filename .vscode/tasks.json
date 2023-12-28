@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Compile and Run MPI Program",
+        "type": "shell",
+        "command": "mpicc",
+        "args": ["${file}", "-o", "${fileBasenameNoExtension}.exe"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "Run MPI Program",
+        "type": "shell",
+        "command": "mpiexec",
+        "args": ["-n", "4", "${fileBasenameNoExtension}.exe"],
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
