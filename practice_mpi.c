@@ -21,7 +21,7 @@ int main(void)
     } 
     else 
     {
-        printf("Greetings from process %d of %d!\n", my_rank, comm_sz);
+        printf("Hello from process %d of %d!\n", my_rank, comm_sz);
         for (int q = 1; q < comm_sz; q++) 
         {
             MPI_Recv(greeting, MAX_STRING, MPI_CHAR, q, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
@@ -32,3 +32,8 @@ int main(void)
     MPI_Finalize();
     return 0;
 }
+// this program is an MPI program that involves multiple processes. 
+// It uses MPI to send greetings from each process (except process 0) to process 0,
+//  which then prints out all the greetings. The output will be a series of greetings
+//   from each process, including process 0. The order of the greetings might vary 
+//   depending on the execution of the MPI processes.
