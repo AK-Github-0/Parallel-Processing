@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
 
 
     if (rank == 0) {
-        printf("Global sum: %d\n", global_sum);
+        printf("global sum: %d\n", global_sum);
     }
 
     MPI_Finalize();
