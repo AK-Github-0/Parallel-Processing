@@ -1,5 +1,3 @@
-# Parallel-Processing
-
 # Parallel Processing Course - Practice Codes and Assignments
 
 ## Overview
