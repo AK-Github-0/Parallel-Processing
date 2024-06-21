@@ -25,29 +25,6 @@ Parallel processing is a form of computation in which many calculations or proce
 - **C**: A general-purpose programming language that provides low-level access to memory.
 - **CUDA**: A parallel computing platform and programming model developed by NVIDIA for general computing on graphical processing units (GPUs).
 
-## Directory Structure
-
-The repository is structured as follows:
-
-```
-├── practice_codes
-│   ├── code1.c
-│   ├── code2.c
-│   ├── ...
-├── assignments
-│   ├── assignment1
-│   │   ├── code.cu
-│   │   ├── report.pdf
-│   ├── assignment2
-│   │   ├── code.cu
-│   │   ├── report.pdf
-│   ├── ...
-├── README.md
-```
-
-- `practice_codes/`: Contains all practice codes developed during the course.
-- `assignments/`: Contains all assignments with their respective codes and reports.
-
 ## Getting Started
 
 To get started with the practice codes and assignments in this repository, follow these steps:
